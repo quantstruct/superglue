@@ -1,0 +1,35 @@
+---
+title: Changelog
+subtitle: Latest updates and improvements
+---
+
+<Update label="2025-02-17">
+
+# Changelog (2025-02-16 - 2025-02-17)
+
+## Overview
+This release introduces significant enhancements to the data transformation and schema generation processes within the GraphQL API, alongside improvements in documentation clarity and file parsing capabilities. Key updates include the integration of new dependencies for schema generation, enhancements to API configuration using AI, and refined error handling for better developer experience.
+
+## 🚀 New Features
+• **GraphQL API Enhancements**: Added an `instruction` field to the `TransformConfig` type in the `api.graphql` file, improving transformation capabilities. This change is reflected in test files to ensure proper handling. [🔗](https://github.com/quantstruct/superglue/commit/ac416f0c93d8b2b3f525f39252f22cf7ef7ab83a)
+
+• **AI-Driven API Configuration**: Integrated OpenAI's API to assist in generating and refining API configurations, enhancing the robustness of the API setup process. [🔗](https://github.com/quantstruct/superglue/commit/c8e56f43afea8b5b38741d6dbf385856d34cc75a)
+
+## 🐛 Bug Fixes
+• **Error Message Clarity**: Improved error message formatting in the `applyJsonataWithValidation` function to enhance readability and debugging. [🔗](https://github.com/quantstruct/superglue/commit/3c8e95a60bdc464720de8917f317a19781aff120)
+
+## ⚡ Performance Improvements
+• **File Parsing Enhancements**: Refined file parsing utility functions to handle diverse data formats more effectively, including improved handling of CSV, JSON, XML, and Excel files. [🔗](https://github.com/quantstruct/superglue/commit/27728f2ce508a36d13ee77e8b60b7b177607bb6e)
+
+## 📚 Documentation
+• **Guide Simplification**: Simplified and standardized titles and descriptions in JIRA, self-hosting, and Shopify guides for improved clarity and user understanding. [🔗](https://github.com/quantstruct/superglue/commit/72365fe0d61f4392692017048553b9eee8a9e183)
+
+## 🔧 Maintenance
+• **Schema Generation Options**: Updated JSON schema generation to enforce required fields and standardize array handling, improving data integrity. [🔗](https://github.com/quantstruct/superglue/commit/7fae94ad4dd3e66b0a950f56ead5cd9d987ec6b8)
+
+• **Dependency Updates**: Added `to-json-schema` package for enhanced schema generation, with a note on deprecated lodash packages requiring future refactoring. [🔗](https://github.com/quantstruct/superglue/commit/7dc6912c3a617d10ca9304686f161fd32e267c90)
+
+## ⚠️ Breaking Changes
+• **File Parsing Return Type**: Changed the return type of `parseFile` and related functions to accommodate various data structures, which may affect integrations relying on previous array-based returns. Ensure compatibility with existing components. [🔗](https://github.com/quantstruct/superglue/commit/27728f2ce508a36d13ee77e8b60b7b177607bb6e)
+
+</Update>
