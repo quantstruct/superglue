@@ -1,0 +1,26 @@
+<Update>
+# Changelog (2025-02-16 - 2025-02-17)
+
+## Overview
+This release focuses on enhancing data transformation and schema generation capabilities, improving documentation clarity, and integrating AI for dynamic API configuration. Key updates include the introduction of a new changelog section in the documentation, enhancements to JSON schema generation, and improvements in file parsing utilities.
+
+## 🚀 New Features
+• **GraphQL API Enhancements**: Introduced an `instruction` field in the `TransformConfig` type to provide detailed guidance for data transformations, improving flexibility and robustness. This update enhances schema generation by converting response data into JSON Schema, reducing manual effort and potential errors. [🔗](https://github.com/quantstruct/superglue/commit/ac416f0c93d8b2b3f525f39252f22cf7ef7ab83a)
+
+## 🐛 Bug Fixes
+*No significant bug fixes were introduced in this release.*
+
+## ⚡ Performance Improvements
+• **File Parsing Utility Enhancements**: Refined file parsing functions to improve flexibility and accuracy. The `parseFile` function now returns a generalized type, accommodating different data structures, and the `parseExcel` function supports multiple sheets, enhancing data extraction capabilities. [🔗](https://github.com/quantstruct/superglue/commit/27728f2ce508a36d13ee77e8b60b7b177607bb6e)
+
+## 📚 Documentation
+• **Changelog Section**: Added a new "Changelog" section to the documentation, improving transparency and user engagement by providing a centralized location for updates and improvements. [🔗](https://github.com/quantstruct/superglue/commit/aba52c2e28e4a364f65005a40ef5fb5991cacc6a)
+• **Guide Simplifications**: Simplified titles and descriptions in JIRA, self-hosting, and Shopify guides for improved clarity and accessibility. [🔗](https://github.com/quantstruct/superglue/commit/72365fe0d61f4392692017048553b9eee8a9e183)
+
+## 🔧 Maintenance
+• **AI Integration for API Configurations**: Integrated OpenAI's chat completions to dynamically generate and refine API configurations, enhancing the system's ability to handle iterative improvements and adjustments. [🔗](https://github.com/quantstruct/superglue/commit/c8e56f43afea8b5b38741d6dbf385856d34cc75a)
+• **Error Message Clarity**: Improved error message formatting in `applyJsonataWithValidation` to enhance readability and debugging experience. [🔗](https://github.com/quantstruct/superglue/commit/3c8e95a60bdc464720de8917f317a19781aff120)
+
+## ⚠️ Breaking Changes
+*No breaking changes were introduced in this release.*
+</Update>
