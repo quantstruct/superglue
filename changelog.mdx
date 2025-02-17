@@ -1,0 +1,29 @@
+<Update label="2025-02-17">
+
+# Changelog (2025-02-16 - 2025-02-17)
+
+## Overview
+This release focuses on enhancing data transformation and schema generation capabilities, improving documentation clarity, and refining file parsing utilities. Key updates include the integration of new dependencies for JSON schema generation, AI-driven API configuration enhancements, and the introduction of a centralized changelog in the documentation.
+
+## 🚀 New Features
+• Enhanced data transformation and schema generation in GraphQL API with the addition of the `instruction` field in `TransformConfig` and integration of `to-json-schema` for robust schema handling. [🔗](https://github.com/quantstruct/superglue/commit/ac416f0c93d8b2b3f525f39252f22cf7ef7ab83a)
+• Dynamic API configuration generation using OpenAI's API, improving flexibility and accuracy in API interactions. [🔗](https://github.com/quantstruct/superglue/commit/c8e56f43afea8b5b38741d6dbf385856d34cc75a)
+
+## 🐛 Bug Fixes
+• Corrected error message formatting in `applyJsonataWithValidation` to improve clarity and context in error logs. [🔗](https://github.com/quantstruct/superglue/commit/3c8e95a60bdc464720de8917f317a19781aff120)
+
+## ⚡ Performance Improvements
+• Refactored file parsing utilities to enhance flexibility and output consistency, supporting multiple sheets in Excel and improving data extraction. [🔗](https://github.com/quantstruct/superglue/commit/27728f2ce508a36d13ee77e8b60b7b177607bb6e)
+
+## 📚 Documentation
+• Introduced a new "Changelog" section to the documentation, improving transparency and user engagement. [🔗](https://github.com/quantstruct/superglue/commit/aba52c2e28e4a364f65005a40ef5fb5991cacc6a)
+• Simplified titles and descriptions in JIRA, self-hosting, and Shopify guides for better readability and searchability. [🔗](https://github.com/quantstruct/superglue/commit/72365fe0d61f4392692017048553b9eee8a9e183)
+
+## 🔧 Maintenance
+• Updated `package-lock.json` and `package.json` to include `to-json-schema` and its TypeScript definitions, enhancing JSON data handling. [🔗](https://github.com/quantstruct/superglue/commit/7dc6912c3a617d10ca9304686f161fd32e267c90)
+• Minor improvements to documentation handling in `documentation.ts` for better HTML content management. [🔗](https://github.com/quantstruct/superglue/commit/c8e56f43afea8b5b38741d6dbf385856d34cc75a)
+
+## ⚠️ Breaking Changes
+None. All changes are backward-compatible, with enhancements focused on improving existing functionalities and documentation.
+
+</Update>
